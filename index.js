@@ -27,6 +27,12 @@ app.get('/skills/new', function(req, res) {
 })
 
 // TODO: Add POST route that writes new skill to the file, redirects to skills index
+app.post('/skills', function(req, res) {
+    var skills = JSON.parse(fs.readFileSync('./data.json'));
+    skills.push({name: req.body.name, level: req.body.level});
+    fs.writeFileSync('./data.json', JSON.stringify(skills));
+    res.redirect('/skills');
+})
 // TODO: Form should have action='/skills' and method='POST'
 
 app.listen(process.env.PORT || 3000);
