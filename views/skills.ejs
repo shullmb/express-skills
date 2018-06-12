@@ -1,0 +1,7 @@
+<% include ./partials/header.ejs %>
+
+<% skills.forEach( function(skill) { %>
+    <%= skill.name + " " + skill.level %>
+<% }) %>
+
+<% include ./partials/footer.ejs %>
