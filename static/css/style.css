@@ -1,6 +1,22 @@
 body {
     background-color: #222;
     color: #fff;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.page-footer {
+    background: #fff;
+}
+
+.page-footer a {
+    color: #222;
+    text-decoration: none;
 }
 
 .skill {

@@ -1,24 +1,24 @@
 <% include ./partials/header.ejs %>
 <% var colorClass; %>
-<h1>All of the SKILLS</h1>
+<h2>All of the SKILLS</h2>
 <h3>These are some skills and some arbitrary numbers:</h3>
 <div class="row">
 <% skills.forEach( function(skill) { %>
     <% if (skill.level >= 7 ) { %>
-        <%    colorClass = 'green'; %>
-        <% } else if (skill.level >= 3) { %>
-        <%    colorClass = 'yellow'; %>
-        <% } else { %>
-        <%    colorClass = 'red'; %>
-        <% } %>
-        <div class="col s12 m6 l4 skill">
-        <h4 class="<%= colorClass %>">
-        <%= skill.name %> 
+    <%    colorClass = 'green'; %>
+    <% } else if (skill.level >= 3) { %>
+    <%    colorClass = 'yellow'; %>
+    <% } else { %>
+    <%    colorClass = 'red'; %>
+    <% } %>
+    <div class="col s12 m6 l4 skill">
+        <h4 class="center-align <%= colorClass %>">
+            <%= skill.name %> 
         <span class="bold">
-           <%= skill.level %>
+            <%= skill.level %>
         </span>
         </h4>
-        </div>
+    </div>
 <% }) %>
 </div>
 
