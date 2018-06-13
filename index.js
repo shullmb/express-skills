@@ -34,4 +34,8 @@ app.post('/skills', function(req, res) {
     res.redirect('/skills');
 })
 
+app.get('*', function(req,res) {
+    res.sendFile(__dirname + '/static/html/404.html');
+})
+
 app.listen(process.env.PORT || 3000);
