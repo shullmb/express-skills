@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Skill Site</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--why does /new require a '../' to access styles?-->
 </head>
+
 <body>
+    <!-- // TODO: Form should have action='/skills' and method='POST'-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="center-align">This is the skillsite</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
     <div class="container">
-        <h1>We need to add stuff here</h1>
-        <h3>links!</h3>
-        <ul>
-            <li><a href="/skills">All Skills</a></li>
-            <li><a href="/skills/new">Add Skills</a></li>
-        </ul>
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <h4 class="center-align"><a href="/skills">All Skills</a></h4>
+            </div>
+            <div class="col s12 m12 l6">
+                <h4 class="center-align"><a href="/skills/new">Add Skills</a></h4>
+            </div>
+        </div>
     </div>
-</body>
-</html>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <a href="/skills/new">Add the skills!</a>
+                    <a href="/skills">Look at the skills!</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
