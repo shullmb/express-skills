@@ -33,6 +33,5 @@ app.post('/skills', function(req, res) {
     fs.writeFileSync('./data.json', JSON.stringify(skills));
     res.redirect('/skills');
 })
-// TODO: Form should have action='/skills' and method='POST'
 
 app.listen(process.env.PORT || 3000);

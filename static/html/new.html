@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- // TODO: Form should have action='/skills' and method='POST'-->
-    <h1>This is where you tell me about the skill</h1>
-    <form action="/skills" method="POST">
-        <input name="name" type="text" placeholder="input yo skilll"> <br>
-        <input name="level" type="number" value="0" step="1" min="0" max="10"> <br>
-        <input type="submit" value="ADD YO SKILL">
-    </form>    
+    <div class="container">
+        <h1>This is where you tell me about the skill</h1>
+        <form action="/skills" method="POST">
+            <input name="name" type="text" placeholder="input yo skilll"> <br>
+            <input name="level" type="number" value="0" step="1" min="0" max="10"> <br>
+            <input type="submit" value="ADD YO SKILL">
+        </form> 
+        <footer>
+            <a href="/">Back to Home!</a>
+        </footer>
+    </div>
 </body>
 </html>

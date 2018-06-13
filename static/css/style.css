@@ -1,0 +1,17 @@
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+.skill {
+    padding: 2em;
+}
+
+.bold {
+    font-weight: bold;
+    color: #222;
+}
+
+.red,.yellow,.green {
+    color: #000;
+}
