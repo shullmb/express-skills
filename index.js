@@ -12,7 +12,7 @@ app.use(bp.urlencoded({extended:false}));
 // default route
 app.get('/', function(req, res) {
     // TODO: add links to index.html so that users can navigate
-    res.sendFile(__dirname + '/static/html/index.html');
+    res.sendFile('index.html');
 })
 
 app.get('/skills', function(req, res) {
